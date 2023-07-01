@@ -1,26 +1,26 @@
 print("Importing packages")
-import requests
 import sys
-import os 
-#import apps.flop_pak.py
+import os
 os.system("clear")
 
-cmd1 = "flop shutdown"
-cmd2 = "flop help"
-cmd2alt = "flop list"
-cmd3 = "flop del"
+#cmd1 = "flop shutdown"
+#cmd2 = "flop help"
+#cmd2alt = "flop list"
+#cmd3 = "flop del"
 #cmd4 = "flop flop-pak"
 
 while 1 < 2:
   usr = input("Enter a command: ")
-  if usr == cmd1:
-    confirm = input("Are you sure you want to Shutdown (y/n)")
+  if usr == "flop shutdown":
+    confirm = input("Are you sure you want to Shutdown (y/n) ")
+    if confirm == "y":
+      sys.exit()
     
-  elif usr == cmd2:
+  elif usr == "flop help":
       print("help/list - Shows a list of commands/n/del - Removes a file ")
-  elif usr == cmd2alt:
+  elif usr == "flop list":
     print("help/list- Shows a list of commands\n\ndel - Removes a file")
-  elif usr == "cmd3":
+  elif usr == "flop del":
     delete_file = input("Path: ")
     os.remove(delete_file)
   elif usr == "help": 
