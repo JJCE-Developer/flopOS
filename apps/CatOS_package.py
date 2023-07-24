@@ -19,3 +19,4 @@ def terminal(cmd):
     print("Try to load the newest catos package.")
   else: 
     print("[CatOS says] This is not catos command. For help type catos help.")
+
